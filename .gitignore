@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+out/
+.env
+*.env
+venv/
+.venv/
+# Nunca versionar datos del usuario (PII financiera):
+data/
+*.local.csv
+*.local.json

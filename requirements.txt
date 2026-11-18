@@ -1,0 +1,4 @@
+# Núcleo (engine, clasificación, costo, CLI, reporte): SOLO stdlib — no instala nada.
+# Dependencias OPCIONALES para la API:
+#   fastapi==0.115.5
+#   uvicorn==0.32.1

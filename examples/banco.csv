@@ -1,0 +1,7 @@
+id,fecha,descripcion,deposito,retiro,referencia
+m1,2026-11-03,Deposito cliente CFDI,1160.00,0,
+m2,2026-11-10,Liquidacion Mercado Libre periodo Q1,8000.00,0,ML-Q1
+m3,2026-11-12,SPEI recibido de cliente directo,45000.00,0,
+m4,2026-11-15,Transferencia desde cuenta propia Santander,20000.00,0,
+m5,2026-11-18,Deposito sin factura,12500.00,0,
+m6,2026-11-05,Pago a proveedor importaciones,0,30000.00,
