@@ -61,7 +61,11 @@ def run(banco_csv, cfdi_path, mp_specs, tasa_isr, out_dir,
                 "costo": {"iva_a_pagar": str(co.iva_a_pagar), "isr": str(co.isr),
                           "costo_total": str(co.costo_total)}})
 
+    ingresos_facturado = sum((m.deposito for m in movs
+                              if by_id[m.id].estado == clf.FACTURADO), Decimal("0"))
+
     data = {"resumen": clf.resumen(clasifs),
+            "ingresos_facturado": str(ingresos_facturado),
             "total_no_facturado": str(total_nf),
             "costo_total_estimado": str(costo_total),
             "candidatos": candidatos}

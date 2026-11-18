@@ -30,8 +30,14 @@ datos de ejemplo y genera `out/report.html`.
    de compra relacionada), según las tasas de tus declaraciones.
 4. **Explota los payouts de marketplace** a venta bruta + comisiones + fees (el depósito
    que llega al banco es el NETO; el ingreso es el BRUTO).
-5. **Reporte / dashboard** (`report.html` + `report.json`) para revisar y decidir.
-6. (Opcional) **Publica pólizas** validadas a tu contabilidad en la nube (conector Alegra).
+5. **Dashboard interactivo** ([`web/dashboard.html`](web/dashboard.html)): clasifica cada
+   depósito, asígnale concepto, y mira **en vivo** el impacto en ingresos/utilidad y en los
+   impuestos a pagar (IVA + ISR) si lo reconoces. Carga tu `out/report.json` o úsalo con el demo.
+6. (Opcional) **Conecta tus fuentes en vivo**: ventas de marketplaces
+   ([`connectors/canalpulse_client.py`](connectors/canalpulse_client.py), read-only) y tu ERP
+   ([`connectors/odoo_client.py`](connectors/odoo_client.py)); **publica pólizas** validadas a tu
+   contabilidad en la nube ([`connectors/alegra_client.py`](connectors/alegra_client.py)). Las
+   credenciales viven en tu `.env` (gitignored), nunca en el repo.
 
 ## Uso
 
