@@ -12,7 +12,7 @@ día; no evade nada. El reconocimiento contable final lo valida tu contador.
 ## Clonar / fork (un comando)
 
 ```bash
-git clone https://github.com/<OWNER>/concilia-mx.git && cd concilia-mx && python3 cli/conta.py demo
+git clone https://github.com/Vilarkptl-lang/concilia-mx.git && cd concilia-mx && python3 cli/conta.py demo
 ```
 
 El núcleo **no requiere dependencias** (solo Python 3.10+ de stdlib). El `demo` corre con
